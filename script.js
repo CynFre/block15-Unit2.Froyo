@@ -32,6 +32,19 @@ for(let i = 0; i < flavorArray.length; i++) {
  }
 console.log(flavorCount);
 console.table(flavorCount);
+/*function countFlavors(flavorArray) {
+	let flavorCount = {};
+	for(let i = 0; i < flavorArray.length; i++) {
+    if(flavorCount[flavorArray[i]]) {
+        flavorCount[flavorArray[i]] += 1;
+    } else {
+        flavorCount[flavorArray[i]] = 1;
+    }
+ }
+ return flavorCount;
+ }
+ console.table(countFlavors);
+ console.table(flavorCount);*/
 
 
 
