@@ -12,7 +12,7 @@
 
 //prompt user for yogurt flavors and write to the console
 const userInput = prompt(
-  "Please enter the flavors of each frozen yogurt sold today, separated by a comma:"
+  "Please enter the flavors of each frozen yogurt sold today, separated by a comma:","vanilla,choc,mango,vanilla,vanilla,choc,mint,cherry"
   );
   console.log(userInput);
 
@@ -30,8 +30,12 @@ for(let i = 0; i < flavorArray.length; i++) {
         flavorCount[flavorArray[i]] = 1;
     }
  }
-console.log(flavorCount);
 console.table(flavorCount);
+
+//The above loop returns the expected table with a count of each flavor ordered. 
+//The function below is an attempt to wrap the loop in a function, however the function returns a list of each index and the flavor of  that index position.
+//This function needs additional work to return the table of flavor counts correctly.
+
 /*function countFlavors(flavorArray) {
 	let flavorCount = {};
 	for(let i = 0; i < flavorArray.length; i++) {
@@ -40,11 +44,12 @@ console.table(flavorCount);
     } else {
         flavorCount[flavorArray[i]] = 1;
     }
+    console.table(flavorCount);
  }
  return flavorCount;
- }
- console.table(countFlavors);
- console.table(flavorCount);*/
+ }*/
+ 
+ 
 
 
 
