@@ -36,7 +36,7 @@ console.table(flavorCount);
 //The function below is an attempt to wrap the loop in a function, however the function returns a list of each index and the flavor of  that index position.
 //This function needs additional work to return the table of flavor counts correctly.
 
-/*function countFlavors(flavorArray) {
+function countFlavors(flavorArray) {
 	let flavorCount = {};
 	for(let i = 0; i < flavorArray.length; i++) {
     if(flavorCount[flavorArray[i]]) {
@@ -47,7 +47,7 @@ console.table(flavorCount);
     console.table(flavorCount);
  }
  return flavorCount;
- }*/
+ }
  
  
 
